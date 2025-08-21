@@ -3825,6 +3825,7 @@ dependencies = [
  "auto_impl",
  "either",
  "revm-database-interface",
+ "revm-precompile",
  "revm-primitives",
  "revm-state",
  "serde",
@@ -3918,6 +3919,7 @@ dependencies = [
  "bincode 2.0.1",
  "revm-bytecode",
  "revm-context-interface",
+ "revm-precompile",
  "revm-primitives",
  "serde",
 ]
@@ -3948,6 +3950,7 @@ dependencies = [
  "rstest",
  "rug",
  "secp256k1 0.31.0",
+ "serde",
  "sha2 0.10.9",
  "substrate-bn",
 ]

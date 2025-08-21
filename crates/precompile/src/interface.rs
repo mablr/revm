@@ -202,6 +202,7 @@ pub type PrecompileFn = fn(&[u8], u64) -> PrecompileResult;
 
 /// Precompile error type.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum PrecompileError {
     /// out of gas is the main error. Others are here just for completeness
     OutOfGas,

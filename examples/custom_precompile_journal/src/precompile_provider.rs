@@ -137,7 +137,7 @@ fn run_custom_precompile<CTX: ContextTr>(
             result: if e.is_oog() {
                 InstructionResult::PrecompileOOG
             } else {
-                InstructionResult::PrecompileError
+                InstructionResult::PrecompileError(e)
             },
             gas: Gas::new(gas_limit),
             output: Bytes::new(),

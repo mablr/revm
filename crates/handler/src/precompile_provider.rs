@@ -135,7 +135,7 @@ impl<CTX: ContextTr> PrecompileProvider<CTX> for EthPrecompiles {
                 result.result = if e.is_oog() {
                     InstructionResult::PrecompileOOG
                 } else {
-                    InstructionResult::PrecompileError
+                    InstructionResult::PrecompileError(e)
                 };
             }
         }
